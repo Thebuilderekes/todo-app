@@ -27,10 +27,10 @@ function addToDo() {
   let datePicker= document.getElementById("date-picker"); //creating toDoInput container for the text input value
   let dueDate = datePicker.value;
   let toDoTextBox = document.getElementById("todoValue"); //creating toDoInput container for the text input value
-  let todoTitle = todoTextBox.value; //grabbing and storing the text input value in todoTitle
+  let title = toDoTextBox.value; //grabbing and storing the text input value in todoTitle
   todos.push({
-    title:"title",
-    dueDate: "dueDate"
+    title: title,
+    dueDate: dueDate
   }); //adding the value to the todos object
 
   render(); // calling the render function to display list after click of "add to do" button
